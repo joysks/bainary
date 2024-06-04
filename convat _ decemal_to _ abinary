@@ -1,0 +1,29 @@
+
+//Write a Java program to convert an integer number to a binary number.
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+    int dec_num, quit, i = 0, j;
+    int Bin_num[] = new int[100];
+
+Scanner input= new Scanner(System.in);
+
+    System.out.println("Input the Bainary number");
+
+    dec_num= input.nextInt();
+
+    quit= dec_num;
+    while(quit!= 0){
+ Bin_num[i++]=quit%2;
+quit= quit/2;
+      
+    }
+
+    for( j=i-1;j>0;j--){
+      System.out.print(Bin_num[j]);
+    }
+
+  }
+}
